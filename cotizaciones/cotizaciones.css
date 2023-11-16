@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+#parent{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    place-content: center;
+    font-family: 'Forum', serif;
+    font-size: 20px;
+}
+
+#encabezado{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 35px;
+    font-family: 'Roboto', sans-serif;
+}
+
+form{
+    border: solid 2.5px;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+#costo, #codigoradio, #codigo{
+    margin-bottom: 10px;
+}
+
+fieldset{
+    margin-top: 7px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+input[type="text"]{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Forum', serif;
+}
+
+label{
+    font-size: 22px;
+}
+
+#boton{
+    display: grid;
+    place-content: center;
+}
+
+
+input[type="submit"] {
+    width: 200px; 
+    background-color: #1B4965;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-top: 15px; 
+}
+
+

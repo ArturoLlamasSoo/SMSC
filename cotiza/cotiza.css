@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+
+.contenedor{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.contenedor img{
+    width: 100px;
+    border-radius: 20px;
+    margin-bottom: 35px;
+}
+
+.tabla{
+    width: 33%;
+    height: 570px;
+    margin: auto;
+    border: 1px solid #343759;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px 0px #1B4965;
+    padding: 40px;
+    text-align: center;
+    color: #343759;
+}
+
+.tabla h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
+.tabla h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.tabla p{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.boton{
+    display: inline-block;
+    width: 150px;
+    padding: 12px;
+    background: #1B4965;
+    text-decoration: none;
+    color: white;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin: auto;
+}
+
+.tabla:hover{
+    background: #CAE9FF;
+    color: black;
+    transition: 1s all;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1400px){
+
+    .contenedor{
+        width: 90%;
+        max-width: 900px;
+        margin: auto;
+        height: 65vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+
+}

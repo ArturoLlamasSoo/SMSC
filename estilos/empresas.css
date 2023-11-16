@@ -1,0 +1,95 @@
+.empresastitulo{
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    background: linear-gradient(to right, #1B9DCB, #62B6CB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.empresas{
+    width: 900px;
+    display: flex;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.empresas:before{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    content: "";
+    width: 23.985%;
+    height: 110px;
+    background: linear-gradient(-90deg, hsla(0, 0%, 96.9%, 0), #f7f7f7);
+}
+
+.empresas:after{
+    position: absolute;
+    right: 0;
+    content: "";
+    width: 23.985%;
+    height: 110px;
+    background: linear-gradient(90deg, hsla(0, 0%, 96.9%, 0), hsla(0, 0%, 96.9%, 0.99) 99%);
+}
+
+.empresas .empresa-track{
+    display: flex;
+    animation: scroll 35s linear infinite;
+    -webkit-animation: scroll 35s linear infinite;
+    width: calc(240px * 10);
+}
+
+.empresas .empresa{
+    display: flex;
+}
+
+.empresas .empresa img{
+    width: 180px;
+    height: 120px;
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, .25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+@keyframes scroll {
+    0%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100%{
+        -webkit-transform: translateX(calc(-240px * 5));
+        transform: translateX(calc(-240px *5));
+    }
+}
+
+@media (max-width:768px){
+
+    .empresastitulo{
+        margin-top: 40px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        background: linear-gradient(to right, #1B9DCB, #62B6CB);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .empresas{
+        width: auto;
+        display: flex;
+        height: auto;
+        margin: auto;
+        overflow: hidden;
+        align-items: center;
+    }
+}

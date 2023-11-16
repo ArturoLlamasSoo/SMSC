@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="./Imagenes/imgredondo.png">
+    <link rel="stylesheet" href="estilos/index.css">
+    <link rel="stylesheet" href="agenda/styleAgenda.css">
+    <link rel="stylesheet" href="estilos/fontello.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Médicos Cabrera -Agenda</title>
+</head>
+
+<body>
+    <div id="cabecera-logo">
+        <a href="agenda.html"><img class="logo" src="./Imagenes/SMC_logo.png" salt=""></a>
+    </div>
+    <header>
+        <input type="checkbox" id="btn-menu">
+        <label class="icon-menu" for="btn-menu" id="icono"></label>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html" class="active">INICIO</a></li>
+                <li><a href="agenda.html" class="active">CITA</a></li>
+                <li><a href="Ubicación.html" class="active">UBICACIÓN</a></li>
+                <li><a href="trayectoria.html" class="active">TRAYECTORIA</a></li>
+                <li><a href="Formulario.html" class="active">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 id="titulo"></h1>
+    <iframe src="https://servicios-medicos-cabrera.youcanbook.me/?noframe=true&skipHeaderFooter=true"
+        id="ycbmiframeservicios-medicos-cabrera"
+        style="width:100%;height:1000px;border:0px;background-color:transparent;" frameborder="0"
+        allowtransparency="true"></iframe>
+    <script>window.addEventListener && window.addEventListener("message", function (event) { if (event.origin === "https://servicios-medicos-cabrera.youcanbook.me") { document.getElementById("ycbmiframeservicios-medicos-cabrera").style.height = event.data + "px"; } }, false);</script>
+    <div id="footer">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="index.html"><img src="Imagenes/SMC_logo.png" alt=""></a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SERVICIOS MÉDICOS CABRERA</h2>
+                <p>LA MEJOR ATENCIÓN MÉDICA PARA LAS PERSONAS Y EMPRESAS</p>
+            </div>
+            <div class="box">
+                <figure>
+                    <p id="reloj"></p>
+                </figure>
+
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>Servicios Médicos Cabrera</b> -Todos los Derechos Reservados</small>
+        </div>
+    </div>
+    <script src="agenda.js"></script>
+    <script src="hora.js"></script>
+</body>
+
+</html>
